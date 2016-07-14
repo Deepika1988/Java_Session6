@@ -1,0 +1,36 @@
+//Interface
+public interface IimplementationOfAbstractAndInterface {
+	public int integerClasses(int a);
+}
+
+//Class which prints the value that is being passed
+public class Assignment1Class1 implements IimplementationOfAbstractAndInterface {
+	
+	int value;
+	public int integerClasses(int a)
+	{
+		value = a;
+		return value;
+	}
+}
+
+//Class which prints the square of the value that is being passed
+public class Assignment1Class2 implements IimplementationOfAbstractAndInterface {
+	
+	int value;
+	public int integerClasses(int a)
+	{
+		value = a * a;
+		return value;
+	}
+	public static void main(String[] args) {
+		
+		Assignment1Class1 a1 = new Assignment1Class1();
+		System.out.println("The value is "+a1.integerClasses(20));
+
+		Assignment1Class2 a2 = new Assignment1Class2();
+		System.out.println("The square of the value is "+a2.integerClasses(50));
+
+	}
+
+}
